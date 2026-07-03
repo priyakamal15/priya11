@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhiparasakthi Engineering College - Student Login</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <img src="images/logo.png" alt="College Logo" class="logo">
+
+        <div class="college-text">
+
+            <h1>Adhiparasakthi Engineering College</h1>
+
+            <hr>
+
+            <h3>Melmaruvathur, Tamil Nadu</h3>
+
+        </div>
+
+    </div>
+
+    <!-- Login Section -->
+
+    <div class="login-section">
+
+        <h2>Student Login Portal</h2>
+
+        <div class="line"></div>
+
+        <form action="#" method="post">
+
+            <!-- Username -->
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-user icon"></i>
+
+                <input
+                    type="text"
+                    name="username"
+                    placeholder="Username / Register Number"
+                    required>
+
+            </div>
+
+            <!-- Password -->
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock icon"></i>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required>
+
+                <i class="fa-solid fa-eye eye"
+                onclick="togglePassword()"></i>
+
+            </div>
+
+            <!-- Remember -->
+
+            <div class="options">
+
+                <label>
+
+                    <input type="checkbox">
+
+                    Remember Me
+
+                </label>
+
+                <a href="#">Forgot Password?</a>
+
+            </div>
+
+            <!-- Login -->
+
+            <button type="submit">
+
+                LOGIN
+
+            </button>
+
+        </form>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        © 2026 Adhiparasakthi Engineering College
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
