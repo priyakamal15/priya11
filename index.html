@@ -1,124 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adhiparasakthi Engineering College - Student Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adhiparasakthi Engineering College - Login</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:linear-gradient(135deg,#8B0000,#D32F2F);
+}
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+.container{
+    width:400px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+    text-align:center;
+}
+
+.logo{
+    width:120px;
+    height:120px;
+    margin-bottom:15px;
+}
+
+h1{
+    color:#B22222;
+    font-size:24px;
+}
+
+p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+input:focus{
+    outline:none;
+    border:1px solid #B22222;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#B22222;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#8B0000;
+}
+
+a{
+    display:block;
+    margin-top:15px;
+    text-decoration:none;
+    color:#B22222;
+}
+
+.footer{
+    margin-top:20px;
+    color:gray;
+    font-size:13px;
+}
+</style>
+
 </head>
-
 <body>
 
 <div class="container">
 
-    <!-- Header -->
+<img src="logo.png" class="logo" alt="College Logo">
 
-    <div class="header">
+<h1>Adhiparasakthi Engineering College</h1>
 
-        <img src="images/logo.png" alt="College Logo" class="logo">
+<p>Student Login Portal</p>
 
-        <div class="college-text">
+<form onsubmit="return login()">
 
-            <h1>Adhiparasakthi Engineering College</h1>
+<input type="text" placeholder="Username" required>
 
-            <hr>
+<input type="password" placeholder="Password" required>
 
-            <h3>Melmaruvathur, Tamil Nadu</h3>
+<button type="submit">LOGIN</button>
 
-        </div>
+</form>
 
-    </div>
+<a href="#">Forgot Password?</a>
 
-    <!-- Login Section -->
-
-    <div class="login-section">
-
-        <h2>Student Login Portal</h2>
-
-        <div class="line"></div>
-
-        <form action="#" method="post">
-
-            <!-- Username -->
-
-            <div class="input-box">
-
-                <i class="fa-solid fa-user icon"></i>
-
-                <input
-                    type="text"
-                    name="username"
-                    placeholder="Username / Register Number"
-                    required>
-
-            </div>
-
-            <!-- Password -->
-
-            <div class="input-box">
-
-                <i class="fa-solid fa-lock icon"></i>
-
-                <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Password"
-                    required>
-
-                <i class="fa-solid fa-eye eye"
-                onclick="togglePassword()"></i>
-
-            </div>
-
-            <!-- Remember -->
-
-            <div class="options">
-
-                <label>
-
-                    <input type="checkbox">
-
-                    Remember Me
-
-                </label>
-
-                <a href="#">Forgot Password?</a>
-
-            </div>
-
-            <!-- Login -->
-
-            <button type="submit">
-
-                LOGIN
-
-            </button>
-
-        </form>
-
-    </div>
-
-    <!-- Footer -->
-
-    <footer>
-
-        © 2026 Adhiparasakthi Engineering College
-
-    </footer>
+<div class="footer">
+Melmaruvathur, Tamil Nadu
+</div>
 
 </div>
 
-<script src="script.js"></script>
+<script>
+function login(){
+    alert("Login Successful!");
+    return false;
+}
+</script>
 
 </body>
 </html>
